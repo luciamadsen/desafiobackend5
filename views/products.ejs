@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+</head>
+<body>
+  <h1>Bienvenido a la página de productos</h1>
+  <% if (user) { %>
+    <p>Bienvenido <%= user.email %>. Rol: <%= user.role %>.</p>
+    <a href="/logout">Cerrar sesión</a>
+  <% } else { %>
+    <p>No estás autenticado. Por favor <a href="/login">inicia sesión</a>.</p>
+  <% } %>
+</body>
+</html>
